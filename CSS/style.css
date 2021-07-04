@@ -1,0 +1,209 @@
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+            max-width: 1440px;
+        }
+        
+        body {
+            height: 100vh;
+            max-width: 1440px;
+            min-width: 1366px;
+        }
+        
+        .margintop {
+            height: 20px;
+            width: 100%;
+            background-color: rgba(153, 226, 255, 0.747);
+        }
+        
+        header {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: white;
+            background-image: linear-gradient( rgba(145, 82, 245, 0.993), rgb(68, 0, 255));
+            display: inline-flex;
+            justify-content: center;
+            width: 40%;
+            padding: 4px;
+            text-transform: uppercase;
+        }
+        
+        .logo h2 {
+            animation: agepichhe 2s linear infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes agepichhe {
+            to {
+                padding-left: 40px;
+            }
+            from {
+                padding-right: 40px;
+            }
+        }
+        
+        nav {
+            display: inline-block;
+            text-align: center;
+            /* padding: 10px 20px; */
+        }
+        
+        nav a {
+            padding: 3px 5px;
+            margin: 0 22px;
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            font-weight: 600;
+        }
+        
+        nav a::after {
+            border-bottom: 2px solid red;
+            /* transition: 0.1s; */
+        }
+        
+        nav a:hover {
+            color: blue;
+            border-bottom: 2px solid red;
+            transition: ease-in-out 0.6s;
+        }
+        
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .right img {
+            width: 68%;
+            position: relative;
+            right: -184px;
+            display: inline-block;
+            margin: 0 0;
+        }
+        
+        .left {
+            margin: 85px 0 0 75px;
+            text-align: center;
+            text-align: left;
+        }
+        
+        .left p {
+            font-size: 48px;
+            margin-bottom: -21px;
+        }
+        
+        .line {
+            height: 45px;
+            width: 30%;
+            margin-left: -12px;
+            position: absolute;
+            border-bottom: 2.5px solid black;
+        }
+        
+        .left h1 {
+            font-size: 48px;
+            padding: 36px 0;
+            text-transform: uppercase;
+        }
+        
+        .left h3 {
+            font-size: 27px;
+            margin-top: -14px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        
+        .left a {
+            border: 2px solid rgba(145, 82, 245, 0.993);
+            padding: 10px 24px;
+            border-radius: 5px;
+            margin: 54px 20px;
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: left;
+            margin-left: -20px;
+            /* transition: ease-in 2s; */
+        }
+        
+        .box {
+            position: absolute;
+            height: 79.5%;
+            width: 200px;
+            background-color: rgba(153, 226, 255, 0.747);
+            z-index: -10;
+        }
+        
+        .buttons a:hover {
+            background-image: linear-gradient( rgba(145, 82, 245, 0.993), rgb(68, 0, 255));
+            color: white;
+        }
+        
+        @media screen and (max-width:700px) {
+            body {
+                /* background-color: red; */
+                height: 100vh;
+            }
+            main {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box {
+                position: absolute;
+                height: 100%;
+                width: 20%;
+                z-index: -10;
+            }
+            .left {
+                margin: 85px 0 0 10px;
+                text-align: center;
+                text-align: left;
+            }
+            .left h1 {
+                font-size: 28px;
+                padding: 36px 0;
+                text-transform: uppercase;
+            }
+            .left h3 {
+                font-size: 17px;
+                margin-top: -14px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+            .left p {
+                font-size: 30px;
+                margin-bottom: -21px;
+            }
+            header {
+                padding: 0 0;
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: left;
+                flex-direction: column;
+            }
+            .logo {
+                display: inlines;
+                font-size: 10px;
+            }
+            /* .nav {
+                display: flex;
+                flex-wrap: wrap;
+            } */
+            .middle {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
